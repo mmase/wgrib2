@@ -1,0 +1,10 @@
+--- jasper-1.900.1/src/libjasper/jpc/jpc_tagtree.c.RESOURCE_LEAK	2011-12-08 14:16:04.000000000 +0100
++++ jasper-1.900.1/src/libjasper/jpc/jpc_tagtree.c	2011-12-08 14:17:55.905637082 +0100
+@@ -126,6 +126,7 @@
+ 	} while (n > 1);
+ 
+ 	if (!(tree->nodes_ = jas_alloc2(tree->numnodes_, sizeof(jpc_tagtreenode_t)))) {
++		jpc_tagtree_destroy(tree);
+ 		return 0;
+ 	}
+ 

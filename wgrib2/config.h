@@ -11,8 +11,8 @@
 #define USE_IPOLATES
 //#define USE_UDF
 #define USE_OPENMP
-#define CC "gcc"
-#define FORTRAN "gfortran"
+#define CC "gcc-4.9"
+#define FORTRAN "gfortran-4.8"
 #define BUILD_COMMENTS "stock build"
 #define USE_PNG
 //#define WMO_VALIDATION

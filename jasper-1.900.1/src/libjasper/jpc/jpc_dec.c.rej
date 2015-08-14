@@ -1,0 +1,15 @@
+--- jasper-1.900.1/src/libjasper/jpc/jpc_dec.c.RESOURCE_LEAK	2011-12-08 14:16:04.594028668 +0100
++++ jasper-1.900.1/src/libjasper/jpc/jpc_dec.c	2011-12-08 14:17:25.677014992 +0100
+@@ -1491,10 +1492,11 @@
+ 	cp->mctid = 0;
+ 	cp->csty = 0;
+ 	if (!(cp->ccps = jas_alloc2(cp->numcomps, sizeof(jpc_dec_ccp_t)))) {
++		jpc_dec_cp_destroy(cp);
+ 		return 0;
+ 	}
+ 	if (!(cp->pchglist = jpc_pchglist_create())) {
+-		jas_free(cp->ccps);
++		jpc_dec_cp_destroy(cp);
+ 		return 0;
+ 	}
+ 	for (compno = 0, ccp = cp->ccps; compno < cp->numcomps;

@@ -126,15 +126,33 @@ int f_rpn(ARG1) {
 
     p = arg1;
     while (sscanf(p,"%[^:]%n", string, &n) == 1) {
-	if (mode == 98) { 
+	if (mode == 98) {
 	    fprintf(stderr, "RPN: top=%d (%s)", top, string);
 	}
 	p = p + n;
 	if (*p == ':') p++;
 
-	// binary operators + - * /
+    //-------------------------------------------
+    //
+	// WXCO OPERATORS & CLASSIFICATION
+    //
+    //-------------------------------------------
 
-	if (strcmp(string,"+") == 0) {
+    // Temperature Classification
+    // - round to nearest 2 degrees
+
+    if (strcmp(string,"temperature") == 0) {
+        if (top < 0) fatal_error("-rpn: bad temperature","");
+        for (i = 0; i < ndata; i++) {
+        if (DEFINED_VAL(stack[top][i])) {
+            stack[top][i] = round(stack[top][i]/2) * 2;
+        }
+        }
+    }
+
+    // binary operators + - * /
+
+	else if (strcmp(string,"+") == 0) {
 	    if (mode == 98) fprintf(stderr," plus");
 	    if (top <= 0) fatal_error("-rpn: bad + expression","");
 	    j = top-1;
@@ -390,7 +408,7 @@ int f_rpn(ARG1) {
         }
 
 	// sto_N
-	else if (string[0] == 's' && string[1] == 't' && string[2] == 'o' && string[3] == '_' 
+	else if (string[0] == 's' && string[1] == 't' && string[2] == 'o' && string[3] == '_'
 		&& isdigit((unsigned char) string[4]) && (string[5] == 0 || (isdigit((unsigned char) string[5]) && string[6] == 0) )) {
 	    if (top < 0) fatal_error("-rpn: sto","");
 	    j = atoi(string+4);
@@ -554,7 +572,7 @@ int f_rpn(ARG1) {
 	    if (top < 0) fatal_error("-rpn: yrev needs field","");
             get_nxny(sec, &nx, &ny, &npnts, &res, &scan);
 	    if (nx <= 0 || ny <= 0) fatal_error("-rpn: yrev only on nx x ny grids","");
- 	    if ((scan >> 4) != 0 && (scan >> 4) != 4) 
+ 	    if ((scan >> 4) != 0 && (scan >> 4) != 4)
 		fatal_error("-rpn: yrev only appropriate for we:ns and we:sn grids","");
 	    for (k = 0; k < ny/2; k++) {
 		p1 = stack[top] + nx*k;
@@ -574,7 +592,7 @@ int f_rpn(ARG1) {
 
             get_nxny(sec, &nx, &ny, &npnts, &res, &scan);
 	    if (nx <= 0 || ny <= 0) fatal_error("-rpn: yrev only on nx x ny grids","");
- 	    if ((scan >> 4) != 0 && (scan >> 4) != 4) 
+ 	    if ((scan >> 4) != 0 && (scan >> 4) != 4)
 		fatal_error("-rpn: smth9 only appropriate for we:ns and we:sn grids","");
 
             top = push(top,ndata,VECTOR,0.0,stack[top],NULL);
@@ -874,7 +892,7 @@ int f_rpn(ARG1) {
 	}
 	else fatal_error("-rpn: unidentified symbol %s", string);
 	if (mode == 98) fprintf(stderr," top=%d\n", top);
-    }	
+    }
 
     if (top >= 0) {
 	for (i = 0; i < ndata; i++) {

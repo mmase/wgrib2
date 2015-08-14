@@ -1,0 +1,15 @@
+--- jasper-1.900.1/src/libjasper/base/jas_seq.c.NULL_RETURNS	2011-12-08 14:00:05.000000000 +0100
++++ jasper-1.900.1/src/libjasper/base/jas_seq.c	2011-12-08 14:15:12.449680562 +0100
+@@ -220,7 +220,11 @@
+ 	mat0->numrows_ = r1 - r0 + 1;
+ 	mat0->numcols_ = c1 - c0 + 1;
+ 	mat0->maxrows_ = mat0->numrows_;
+-	mat0->rows_ = jas_alloc2(mat0->maxrows_, sizeof(jas_seqent_t *));
++	if (!(mat0->rows_ = jas_alloc2(mat0->maxrows_, sizeof(jas_seqent_t *)))) {
++		jas_matrix_destroy(mat0);
++		return;
++	}
++
+ 	for (i = 0; i < mat0->numrows_; ++i) {
+ 		mat0->rows_[i] = mat1->rows_[r0 + i] + c0;
+ 	}
