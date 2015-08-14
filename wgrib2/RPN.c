@@ -145,7 +145,40 @@ int f_rpn(ARG1) {
         if (top < 0) fatal_error("-rpn: bad temperature","");
         for (i = 0; i < ndata; i++) {
         if (DEFINED_VAL(stack[top][i])) {
-            stack[top][i] = round(stack[top][i]/2) * 2;
+            stack[top][i] = roundf(stack[top][i]/2.0f) * 2.0f;
+        }
+        }
+    }
+
+    // Precipitation Classification
+
+    else if (strcmp(string,"precipitation") == 0) {
+        if (top < 0) fatal_error("-rpn: bad precipitation","");
+
+        float range[] = {0.01f, 0.05f, 0.1f, 0.2f, 0.3f, 0.4f, 0.5f, 0.6f, 0.7f, 0.8f, 0.9f, 1.0f, 1.25f, 1.5f, 1.75f, 2.0f, 2.5f, 3.0f, 3.5f, 4.0f, 4.5f, 5.0f, 5.5f, 6.0f, 6.5f, 7.0f, 7.5f, 8.0f, 8.5f, 9.0f, 9.5f, 10.0f, 11.0f, 12.0f, 13.0f, 14.0f, 15.0f, 16.0f, 17.0f, 18.0f, 19.0f, 20.0f, 25.0};
+
+        for (i = 0; i < ndata; i++) {
+        if (DEFINED_VAL(stack[top][i])) {
+            float rate = stack[top][i];
+            float qpf = rate * 21600.0f / 25.4f;
+            float assignment = 0.0f;
+            float range_size = sizeof(range)/sizeof(float);
+
+            for(i = 0; i < range_size; i++)
+            {
+                int next_value = 0;
+
+                if (i + 1 >= range_size) {
+                    next_value = 99999999.0f;
+                } else {
+                    next_value = range[i+1];
+                }
+
+                if(qpf >= range[i] && qpf < next_value) {
+                    assignment = range[i];
+                }
+            }
+            stack[top][i] = assignment;
         }
         }
     }
