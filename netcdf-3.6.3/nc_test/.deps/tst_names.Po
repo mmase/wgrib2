@@ -14,8 +14,8 @@ tst_names.o: tst_names.c ../config.h /usr/include/stdlib.h \
  /usr/include/sys/_types/_ucontext.h /usr/include/sys/_types/_sigset_t.h \
  /usr/include/sys/_types/_size_t.h /usr/include/sys/_types/_uid_t.h \
  /usr/include/sys/resource.h \
- /usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include/stdint.h \
- /usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include-fixed/stdint.h \
+ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include/stdint.h \
+ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include-fixed/stdint.h \
  /usr/include/sys/_types/_int8_t.h /usr/include/sys/_types/_int16_t.h \
  /usr/include/sys/_types/_int32_t.h /usr/include/sys/_types/_int64_t.h \
  /usr/include/_types/_uint8_t.h /usr/include/_types/_uint16_t.h \
@@ -36,7 +36,7 @@ tst_names.o: tst_names.c ../config.h /usr/include/stdlib.h \
  /usr/include/secure/_common.h /usr/include/string.h \
  /usr/include/sys/_types/_rsize_t.h /usr/include/sys/_types/_errno_t.h \
  /usr/include/strings.h /usr/include/secure/_string.h ../libsrc/netcdf.h \
- /usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include/stddef.h \
+ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include/stddef.h \
  /usr/include/errno.h /usr/include/sys/errno.h nc_tests.h \
  /usr/include/assert.h error.h
 
@@ -98,9 +98,9 @@ tst_names.o: tst_names.c ../config.h /usr/include/stdlib.h \
 
 /usr/include/sys/resource.h:
 
-/usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include/stdint.h:
+/usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include/stdint.h:
 
-/usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include-fixed/stdint.h:
+/usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include-fixed/stdint.h:
 
 /usr/include/sys/_types/_int8_t.h:
 
@@ -182,7 +182,7 @@ tst_names.o: tst_names.c ../config.h /usr/include/stdlib.h \
 
 ../libsrc/netcdf.h:
 
-/usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include/stddef.h:
+/usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include/stddef.h:
 
 /usr/include/errno.h:
 

@@ -66,13 +66,13 @@ fast_install=needless
 
 # The host system.
 host_alias=
-host=i686-apple-darwin14.4.0
-host_os=darwin14.4.0
+host=i686-apple-darwin15.0.0
+host_os=darwin15.0.0
 
 # The build system.
 build_alias=
-build=i686-apple-darwin14.4.0
-build_os=darwin14.4.0
+build=i686-apple-darwin15.0.0
+build_os=darwin15.0.0
 
 # An echo program that does not interpret backslashes.
 echo="/bin/echo"
@@ -82,13 +82,13 @@ AR="ar"
 AR_FLAGS="cru"
 
 # A C compiler.
-LTCC="gcc-4.9"
+LTCC="gcc"
 
 # LTCC compiler flags.
-LTCFLAGS="-Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math  -O3 -I/Users/Mike/Work/repos/wgrib2/include -I/Users/Mike/Work/repos/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include "
+LTCFLAGS="-Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math  -O3 -I/Users/Mike/Code/wgrib2/include -I/Users/Mike/Code/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include "
 
 # A language-specific compiler.
-CC="gcc-4.9"
+CC="gcc"
 
 # Is the compiler the GNU C compiler?
 with_gcc=yes
@@ -325,7 +325,7 @@ variables_saved_for_relink="PATH DYLD_LIBRARY_PATH  GCC_EXEC_PREFIX COMPILER_PAT
 link_all_deplibs=yes
 
 # Compile-time system search path for libraries
-sys_lib_search_path_spec=`echo " /usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/ /usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/../../../../../../x86_64-apple-darwin14.3.0/lib/x86_64-apple-darwin14.3.0/4.9.2/ /usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/../../../../../../x86_64-apple-darwin14.3.0/lib/ /usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/../../../x86_64-apple-darwin14.3.0/4.9.2/ /usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/../../../ /lib/x86_64-apple-darwin14.3.0/4.9.2/ /lib/ /usr/lib/x86_64-apple-darwin14.3.0/4.9.2/ /usr/lib/  /lib /usr/lib /usr/local/lib" | $SED -e "s@${gcc_dir}@\${gcc_dir}@g;s@${gcc_ver}@\${gcc_ver}@g"`
+sys_lib_search_path_spec=`echo " /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/../../../../x86_64-apple-darwin15.0.0/lib/x86_64-apple-darwin15.0.0/5.2.0/ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/../../../../x86_64-apple-darwin15.0.0/lib/ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/../../../x86_64-apple-darwin15.0.0/5.2.0/ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/../../../ /lib/x86_64-apple-darwin15.0.0/5.2.0/ /lib/ /usr/lib/x86_64-apple-darwin15.0.0/5.2.0/ /usr/lib/  /lib /usr/lib /usr/local/lib" | $SED -e "s@${gcc_dir}@\${gcc_dir}@g;s@${gcc_ver}@\${gcc_ver}@g"`
 
 # Run-time system search path for libraries
 sys_lib_dlsearch_path_spec="/usr/local/lib /lib /usr/lib"
@@ -7285,13 +7285,13 @@ fast_install=needless
 
 # The host system.
 host_alias=
-host=i686-apple-darwin14.4.0
-host_os=darwin14.4.0
+host=i686-apple-darwin15.0.0
+host_os=darwin15.0.0
 
 # The build system.
 build_alias=
-build=i686-apple-darwin14.4.0
-build_os=darwin14.4.0
+build=i686-apple-darwin15.0.0
+build_os=darwin15.0.0
 
 # An echo program that does not interpret backslashes.
 echo="/bin/echo"
@@ -7301,10 +7301,10 @@ AR="ar"
 AR_FLAGS="cru"
 
 # A C compiler.
-LTCC="gcc-4.9"
+LTCC="gcc"
 
 # LTCC compiler flags.
-LTCFLAGS="-Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math  -O3 -I/Users/Mike/Work/repos/wgrib2/include -I/Users/Mike/Work/repos/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include "
+LTCFLAGS="-Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math  -O3 -I/Users/Mike/Code/wgrib2/include -I/Users/Mike/Code/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include "
 
 # A language-specific compiler.
 CC="g++"
@@ -7433,8 +7433,8 @@ old_archive_from_new_cmds=""
 old_archive_from_expsyms_cmds=""
 
 # Commands used to build and install a shared archive.
-archive_cmds="\$CC -r -keep_private_externs -nostdlib -o \${lib}-master.o \$libobjs~\$CC -dynamiclib \$allow_undefined_flag -o \$lib \${lib}-master.o \$deplibs \$compiler_flags -install_name \$rpath/\$soname \$verstring"
-archive_expsym_cmds="sed -e \\\"s,#.*,,\\\" -e \\\"s,^[    ]*,,\\\" -e \\\"s,^\\\\(..*\\\\),_&,\\\" < \$export_symbols > \$output_objdir/\${libname}-symbols.expsym~\$CC -r -keep_private_externs -nostdlib -o \${lib}-master.o \$libobjs~\$CC -dynamiclib \$allow_undefined_flag -o \$lib \${lib}-master.o \$deplibs \$compiler_flags -install_name \$rpath/\$soname \$verstring~nmedit -s \$output_objdir/\${libname}-symbols.expsym \${lib}"
+archive_cmds="\$CC -dynamiclib -single_module \$allow_undefined_flag -o \$lib \$libobjs \$deplibs \$compiler_flags -install_name \$rpath/\$soname \$verstring"
+archive_expsym_cmds="sed -e \\\"s,#.*,,\\\" -e \\\"s,^[    ]*,,\\\" -e \\\"s,^\\\\(..*\\\\),_&,\\\" < \$export_symbols > \$output_objdir/\${libname}-symbols.expsym~\$CC -dynamiclib -single_module \$allow_undefined_flag -o \$lib \$libobjs \$deplibs \$compiler_flags -install_name \$rpath/\$soname \$verstring~nmedit -s \$output_objdir/\${libname}-symbols.expsym \${lib}"
 postinstall_cmds=""
 postuninstall_cmds=""
 
@@ -7544,7 +7544,7 @@ variables_saved_for_relink="PATH DYLD_LIBRARY_PATH  GCC_EXEC_PREFIX COMPILER_PAT
 link_all_deplibs=yes
 
 # Compile-time system search path for libraries
-sys_lib_search_path_spec=`echo " /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0  /lib /usr/lib /usr/local/lib" | $SED -e "s@${gcc_dir}@\${gcc_dir}@g;s@${gcc_ver}@\${gcc_ver}@g"`
+sys_lib_search_path_spec=`echo " /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/../../../../x86_64-apple-darwin15.0.0/lib/x86_64-apple-darwin15.0.0/5.2.0/ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/../../../../x86_64-apple-darwin15.0.0/lib/ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/../../../x86_64-apple-darwin15.0.0/5.2.0/ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/../../../ /lib/x86_64-apple-darwin15.0.0/5.2.0/ /lib/ /usr/lib/x86_64-apple-darwin15.0.0/5.2.0/ /usr/lib/  /lib /usr/lib /usr/local/lib" | $SED -e "s@${gcc_dir}@\${gcc_dir}@g;s@${gcc_ver}@\${gcc_ver}@g"`
 
 # Run-time system search path for libraries
 sys_lib_dlsearch_path_spec="/usr/local/lib /lib /usr/lib"
@@ -7593,13 +7593,13 @@ fast_install=needless
 
 # The host system.
 host_alias=
-host=i686-apple-darwin14.4.0
-host_os=darwin14.4.0
+host=i686-apple-darwin15.0.0
+host_os=darwin15.0.0
 
 # The build system.
 build_alias=
-build=i686-apple-darwin14.4.0
-build_os=darwin14.4.0
+build=i686-apple-darwin15.0.0
+build_os=darwin15.0.0
 
 # An echo program that does not interpret backslashes.
 echo="/bin/echo"
@@ -7609,10 +7609,10 @@ AR="ar"
 AR_FLAGS="cru"
 
 # A C compiler.
-LTCC="gcc-4.9"
+LTCC="gcc"
 
 # LTCC compiler flags.
-LTCFLAGS="-Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math  -O3 -I/Users/Mike/Work/repos/wgrib2/include -I/Users/Mike/Work/repos/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include "
+LTCFLAGS="-Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math  -O3 -I/Users/Mike/Code/wgrib2/include -I/Users/Mike/Code/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include "
 
 # A language-specific compiler.
 CC="gfortran"
@@ -7852,7 +7852,7 @@ variables_saved_for_relink="PATH DYLD_LIBRARY_PATH  GCC_EXEC_PREFIX COMPILER_PAT
 link_all_deplibs=yes
 
 # Compile-time system search path for libraries
-sys_lib_search_path_spec=`echo " /usr/local/lib/gcc/x86_64-apple-darwin13.0.0/4.8.2/ /usr/local/lib/gcc/x86_64-apple-darwin13.0.0/4.8.2/../../../../x86_64-apple-darwin13.0.0/lib/x86_64-apple-darwin13.0.0/4.8.2/ /usr/local/lib/gcc/x86_64-apple-darwin13.0.0/4.8.2/../../../../x86_64-apple-darwin13.0.0/lib/ /usr/local/lib/gcc/x86_64-apple-darwin13.0.0/4.8.2/../../../x86_64-apple-darwin13.0.0/4.8.2/ /usr/local/lib/gcc/x86_64-apple-darwin13.0.0/4.8.2/../../../ /lib/x86_64-apple-darwin13.0.0/4.8.2/ /lib/ /usr/lib/x86_64-apple-darwin13.0.0/4.8.2/ /usr/lib/  /lib /usr/lib /usr/local/lib" | $SED -e "s@${gcc_dir}@\${gcc_dir}@g;s@${gcc_ver}@\${gcc_ver}@g"`
+sys_lib_search_path_spec=`echo " /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/../../../../x86_64-apple-darwin15.0.0/lib/x86_64-apple-darwin15.0.0/5.2.0/ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/../../../../x86_64-apple-darwin15.0.0/lib/ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/../../../x86_64-apple-darwin15.0.0/5.2.0/ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/../../../ /lib/x86_64-apple-darwin15.0.0/5.2.0/ /lib/ /usr/lib/x86_64-apple-darwin15.0.0/5.2.0/ /usr/lib/  /lib /usr/lib /usr/local/lib" | $SED -e "s@${gcc_dir}@\${gcc_dir}@g;s@${gcc_ver}@\${gcc_ver}@g"`
 
 # Run-time system search path for libraries
 sys_lib_dlsearch_path_spec="/usr/local/lib /lib /usr/lib"

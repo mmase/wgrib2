@@ -1,4 +1,4 @@
-prefix=/Users/Mike/Work/repos/wgrib2
+prefix=/Users/Mike/Code/wgrib2
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include/libpng12

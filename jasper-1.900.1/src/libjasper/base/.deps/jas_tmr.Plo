@@ -18,8 +18,8 @@ jas_tmr.lo: jas_tmr.c /usr/include/stdio.h /usr/include/sys/cdefs.h \
  /usr/include/sys/_types/_sigaltstack.h \
  /usr/include/sys/_types/_ucontext.h /usr/include/sys/_types/_sigset_t.h \
  /usr/include/sys/_types/_uid_t.h /usr/include/sys/resource.h \
- /usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include/stdint.h \
- /usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include-fixed/stdint.h \
+ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include/stdint.h \
+ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include-fixed/stdint.h \
  /usr/include/sys/_types/_int8_t.h /usr/include/sys/_types/_int16_t.h \
  /usr/include/sys/_types/_int32_t.h /usr/include/sys/_types/_int64_t.h \
  /usr/include/_types/_uint8_t.h /usr/include/_types/_uint16_t.h \
@@ -39,6 +39,7 @@ jas_tmr.lo: jas_tmr.c /usr/include/stdio.h /usr/include/sys/cdefs.h \
  ../../../src/libjasper/include/jasper/jas_tmr.h \
  ../../../src/libjasper/include/jasper/jas_config.h \
  /usr/include/sys/time.h /usr/include/sys/_types/_fd_def.h \
+ /usr/include/sys/_types/_timeval64.h \
  /usr/include/sys/_types/_suseconds_t.h \
  /usr/include/sys/_types/_fd_setsize.h /usr/include/sys/_types/_fd_set.h \
  /usr/include/sys/_types/_fd_clr.h /usr/include/sys/_types/_fd_isset.h \
@@ -117,9 +118,9 @@ jas_tmr.lo: jas_tmr.c /usr/include/stdio.h /usr/include/sys/cdefs.h \
 
 /usr/include/sys/resource.h:
 
-/usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include/stdint.h:
+/usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include/stdint.h:
 
-/usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include-fixed/stdint.h:
+/usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include-fixed/stdint.h:
 
 /usr/include/sys/_types/_int8_t.h:
 
@@ -188,6 +189,8 @@ jas_tmr.lo: jas_tmr.c /usr/include/stdio.h /usr/include/sys/cdefs.h \
 /usr/include/sys/time.h:
 
 /usr/include/sys/_types/_fd_def.h:
+
+/usr/include/sys/_types/_timeval64.h:
 
 /usr/include/sys/_types/_suseconds_t.h:
 

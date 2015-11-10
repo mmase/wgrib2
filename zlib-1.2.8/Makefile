@@ -16,19 +16,19 @@
 # To install in $HOME instead of /usr/local, use:
 #    make install prefix=$HOME
 
-CC=gcc-4.9
+CC=gcc
 
-CFLAGS=-Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math  -O3 -I/Users/Mike/Work/repos/wgrib2/include -I/Users/Mike/Work/repos/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include  
+CFLAGS=-Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math  -O3 -I/Users/Mike/Code/wgrib2/include -I/Users/Mike/Code/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include  
 #CFLAGS=-O -DMAX_WBITS=14 -DMAX_MEM_LEVEL=7
 #CFLAGS=-g -DDEBUG
 #CFLAGS=-O3 -Wall -Wwrite-strings -Wpointer-arith -Wconversion \
 #           -Wstrict-prototypes -Wmissing-prototypes
 
-SFLAGS=-Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math  -O3 -I/Users/Mike/Work/repos/wgrib2/include -I/Users/Mike/Work/repos/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include   -fPIC
+SFLAGS=-Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math  -O3 -I/Users/Mike/Code/wgrib2/include -I/Users/Mike/Code/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include   -fPIC
 LDFLAGS= 
 TEST_LDFLAGS=-L. libz.a
-LDSHARED=gcc-4.9 -dynamiclib -install_name ${exec_prefix}/lib/libz.1.dylib -compatibility_version 1 -current_version 1.2.8
-CPP=gcc-4.9 -E
+LDSHARED=gcc -dynamiclib -install_name ${exec_prefix}/lib/libz.1.dylib -compatibility_version 1 -current_version 1.2.8
+CPP=gcc -E
 
 STATICLIB=libz.a
 SHAREDLIB=libz.dylib
@@ -45,7 +45,7 @@ TAR=tar
 SHELL=/bin/sh
 EXE=
 
-prefix =/Users/Mike/Work/repos/wgrib2
+prefix =/Users/Mike/Code/wgrib2
 exec_prefix =${prefix}
 libdir =${exec_prefix}/lib
 sharedlibdir =${libdir}

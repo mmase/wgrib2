@@ -1,8 +1,8 @@
 libpng12_la-pngread.lo: pngread.c png.h \
- /Users/Mike/Work/repos/wgrib2/include/zlib.h \
- /Users/Mike/Work/repos/wgrib2/include/zconf.h \
- /usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include-fixed/limits.h \
- /usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include-fixed/syslimits.h \
+ /Users/Mike/Code/wgrib2/include/zlib.h \
+ /Users/Mike/Code/wgrib2/include/zconf.h \
+ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include-fixed/limits.h \
+ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/sys/cdefs.h \
  /usr/include/sys/_symbol_aliasing.h \
  /usr/include/sys/_posix_availability.h /usr/include/machine/limits.h \
@@ -47,7 +47,7 @@ libpng12_la-pngread.lo: pngread.c png.h \
  /usr/include/sys/_pthread/_pthread_key_t.h \
  /usr/include/sys/_types/_fsblkcnt_t.h \
  /usr/include/sys/_types/_fsfilcnt_t.h \
- /usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include/stdarg.h \
+ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include/stdarg.h \
  /usr/include/unistd.h /usr/include/_types.h /usr/include/sys/unistd.h \
  /usr/include/sys/_types/_posix_vdisable.h \
  /usr/include/sys/_types/_seek_set.h /usr/include/_types/_uint64_t.h \
@@ -66,25 +66,25 @@ libpng12_la-pngread.lo: pngread.c png.h \
  /usr/include/machine/_mcontext.h /usr/include/i386/_mcontext.h \
  /usr/include/mach/i386/_structs.h /usr/include/sys/_types/_sigaltstack.h \
  /usr/include/sys/_types/_ucontext.h /usr/include/sys/resource.h \
- /usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include/stdint.h \
- /usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include-fixed/stdint.h \
+ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include/stdint.h \
+ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include-fixed/stdint.h \
  /usr/include/_types/_uint8_t.h /usr/include/_types/_uint16_t.h \
  /usr/include/_types/_uint32_t.h /usr/include/_types/_intmax_t.h \
  /usr/include/_types/_uintmax_t.h /usr/include/alloca.h \
  /usr/include/sys/_types/_ct_rune_t.h /usr/include/sys/_types/_rune_t.h \
  /usr/include/sys/_types/_wchar_t.h \
- /usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include-fixed/math.h \
+ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include-fixed/math.h \
  /usr/include/time.h
 
 png.h:
 
-/Users/Mike/Work/repos/wgrib2/include/zlib.h:
+/Users/Mike/Code/wgrib2/include/zlib.h:
 
-/Users/Mike/Work/repos/wgrib2/include/zconf.h:
+/Users/Mike/Code/wgrib2/include/zconf.h:
 
-/usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include-fixed/limits.h:
+/usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include-fixed/limits.h:
 
-/usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include-fixed/syslimits.h:
+/usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include-fixed/syslimits.h:
 
 /usr/include/limits.h:
 
@@ -224,7 +224,7 @@ png.h:
 
 /usr/include/sys/_types/_fsfilcnt_t.h:
 
-/usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include/stdarg.h:
+/usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include/stdarg.h:
 
 /usr/include/unistd.h:
 
@@ -302,9 +302,9 @@ config.h:
 
 /usr/include/sys/resource.h:
 
-/usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include/stdint.h:
+/usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include/stdint.h:
 
-/usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include-fixed/stdint.h:
+/usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include-fixed/stdint.h:
 
 /usr/include/_types/_uint8_t.h:
 
@@ -324,6 +324,6 @@ config.h:
 
 /usr/include/sys/_types/_wchar_t.h:
 
-/usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include-fixed/math.h:
+/usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include-fixed/math.h:
 
 /usr/include/time.h:

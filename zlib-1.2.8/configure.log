@@ -1,89 +1,89 @@
 --------------------
-./configure --prefix=/Users/Mike/Work/repos/wgrib2
-Thu Aug 13 20:46:06 EDT 2015
-=== ztest58096.c ===
+./configure --prefix=/Users/Mike/Code/wgrib2
+Mon Nov  9 23:17:16 EST 2015
+=== ztest82259.c ===
 extern int getchar();
 int hello() {return getchar();}
 ===
-gcc-4.9 -c ztest58096.c
+gcc -c ztest82259.c
 ... using gcc
 
 Checking for obsessive-compulsive compiler options...
-=== ztest58096.c ===
+=== ztest82259.c ===
 int foo() { return 0; }
 ===
-gcc-4.9 -c -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Work/repos/wgrib2/include -I/Users/Mike/Work/repos/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include ztest58096.c
-ztest58096.c:1:5: warning: no previous prototype for 'foo' [-Wmissing-prototypes]
+gcc -c -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Code/wgrib2/include -I/Users/Mike/Code/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include ztest82259.c
+ztest82259.c:1:5: warning: no previous prototype for ‘foo’ [-Wmissing-prototypes]
  int foo() { return 0; }
      ^
-ztest58096.c: In function 'foo':
-ztest58096.c:1:5: warning: old-style function definition [-Wold-style-definition]
+ztest82259.c: In function ‘foo’:
+ztest82259.c:1:5: warning: old-style function definition [-Wold-style-definition]
 
 Checking for shared library support...
-=== ztest58096.c ===
+=== ztest82259.c ===
 extern int getchar();
 int hello() {return getchar();}
 ===
-gcc-4.9 -w -c -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Work/repos/wgrib2/include -I/Users/Mike/Work/repos/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include -fPIC ztest58096.c
-gcc-4.9 -dynamiclib -install_name ${exec_prefix}/lib/libz.1.dylib -compatibility_version 1 -current_version 1.2.8 -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Work/repos/wgrib2/include -I/Users/Mike/Work/repos/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include -fPIC -o ztest58096.dylib ztest58096.o
-Building shared library libz.1.2.8.dylib with gcc-4.9.
+gcc -w -c -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Code/wgrib2/include -I/Users/Mike/Code/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include -fPIC ztest82259.c
+gcc -dynamiclib -install_name ${exec_prefix}/lib/libz.1.dylib -compatibility_version 1 -current_version 1.2.8 -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Code/wgrib2/include -I/Users/Mike/Code/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include -fPIC -o ztest82259.dylib ztest82259.o
+Building shared library libz.1.2.8.dylib with gcc.
 
-=== ztest58096.c ===
+=== ztest82259.c ===
 #include <sys/types.h>
 off64_t dummy = 0;
 ===
-gcc-4.9 -c -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Work/repos/wgrib2/include -I/Users/Mike/Work/repos/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include -D_LARGEFILE64_SOURCE=1 ztest58096.c
-ztest58096.c:2:1: error: unknown type name 'off64_t'
+gcc -c -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Code/wgrib2/include -I/Users/Mike/Code/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include -D_LARGEFILE64_SOURCE=1 ztest82259.c
+ztest82259.c:2:1: error: unknown type name ‘off64_t’
  off64_t dummy = 0;
  ^
 (exit code 1)
 Checking for off64_t... No.
 
-=== ztest58096.c ===
+=== ztest82259.c ===
 #include <stdio.h>
 int main(void) {
   fseeko(NULL, 0, 0);
   return 0;
 }
 ===
-gcc-4.9 -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Work/repos/wgrib2/include -I/Users/Mike/Work/repos/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include -o ztest58096 ztest58096.c
+gcc -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Code/wgrib2/include -I/Users/Mike/Code/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include -o ztest82259 ztest82259.c
 Checking for fseeko... Yes.
 
-=== ztest58096.c ===
+=== ztest82259.c ===
 #include <string.h>
 #include <errno.h>
 int main() { return strlen(strerror(errno)); }
 ===
-gcc-4.9 -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Work/repos/wgrib2/include -I/Users/Mike/Work/repos/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include -o ztest58096 ztest58096.c
-ztest58096.c: In function 'main':
-ztest58096.c:3:5: warning: old-style function definition [-Wold-style-definition]
+gcc -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Code/wgrib2/include -I/Users/Mike/Code/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include -o ztest82259 ztest82259.c
+ztest82259.c: In function ‘main’:
+ztest82259.c:3:5: warning: old-style function definition [-Wold-style-definition]
  int main() { return strlen(strerror(errno)); }
      ^
 Checking for strerror... Yes.
 
-=== ztest58096.c ===
+=== ztest82259.c ===
 #include <unistd.h>
 int main() { return 0; }
 ===
-gcc-4.9 -c -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Work/repos/wgrib2/include -I/Users/Mike/Work/repos/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include ztest58096.c
-ztest58096.c: In function 'main':
-ztest58096.c:2:5: warning: old-style function definition [-Wold-style-definition]
+gcc -c -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Code/wgrib2/include -I/Users/Mike/Code/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include ztest82259.c
+ztest82259.c: In function ‘main’:
+ztest82259.c:2:5: warning: old-style function definition [-Wold-style-definition]
  int main() { return 0; }
      ^
 Checking for unistd.h... Yes.
 
-=== ztest58096.c ===
+=== ztest82259.c ===
 #include <stdarg.h>
 int main() { return 0; }
 ===
-gcc-4.9 -c -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Work/repos/wgrib2/include -I/Users/Mike/Work/repos/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include ztest58096.c
-ztest58096.c: In function 'main':
-ztest58096.c:2:5: warning: old-style function definition [-Wold-style-definition]
+gcc -c -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Code/wgrib2/include -I/Users/Mike/Code/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include ztest82259.c
+ztest82259.c: In function ‘main’:
+ztest82259.c:2:5: warning: old-style function definition [-Wold-style-definition]
  int main() { return 0; }
      ^
 Checking for stdarg.h... Yes.
 
-=== ztest58096.c ===
+=== ztest82259.c ===
 #include <stdio.h>
 #include <stdarg.h>
 #include "zconf.h"
@@ -95,14 +95,14 @@ int main()
   return 0;
 }
 ===
-gcc-4.9 -c -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Work/repos/wgrib2/include -I/Users/Mike/Work/repos/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include ztest58096.c
-ztest58096.c: In function 'main':
-ztest58096.c:4:5: warning: old-style function definition [-Wold-style-definition]
+gcc -c -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Code/wgrib2/include -I/Users/Mike/Code/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include ztest82259.c
+ztest82259.c: In function ‘main’:
+ztest82259.c:4:5: warning: old-style function definition [-Wold-style-definition]
  int main()
      ^
 Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
 
-=== ztest58096.c ===
+=== ztest82259.c ===
 #include <stdio.h>
 #include <stdarg.h>
 int mytest(const char *fmt, ...)
@@ -119,17 +119,17 @@ int main()
   return (mytest("Hello%d\n", 1));
 }
 ===
-gcc-4.9 -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Work/repos/wgrib2/include -I/Users/Mike/Work/repos/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include -o ztest58096 ztest58096.c
-ztest58096.c:3:5: warning: no previous prototype for 'mytest' [-Wmissing-prototypes]
+gcc -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Code/wgrib2/include -I/Users/Mike/Code/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include -o ztest82259 ztest82259.c
+ztest82259.c:3:5: warning: no previous prototype for ‘mytest’ [-Wmissing-prototypes]
  int mytest(const char *fmt, ...)
      ^
-ztest58096.c: In function 'main':
-ztest58096.c:12:5: warning: old-style function definition [-Wold-style-definition]
+ztest82259.c: In function ‘main’:
+ztest82259.c:12:5: warning: old-style function definition [-Wold-style-definition]
  int main()
      ^
 Checking for vsnprintf() in stdio.h... Yes.
 
-=== ztest58096.c ===
+=== ztest82259.c ===
 #include <stdio.h>
 #include <stdarg.h>
 int mytest(const char *fmt, ...)
@@ -147,17 +147,17 @@ int main()
   return (mytest("Hello%d\n", 1));
 }
 ===
-gcc-4.9 -c -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Work/repos/wgrib2/include -I/Users/Mike/Work/repos/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include ztest58096.c
-ztest58096.c:3:5: warning: no previous prototype for 'mytest' [-Wmissing-prototypes]
+gcc -c -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Code/wgrib2/include -I/Users/Mike/Code/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include ztest82259.c
+ztest82259.c:3:5: warning: no previous prototype for ‘mytest’ [-Wmissing-prototypes]
  int mytest(const char *fmt, ...)
      ^
-ztest58096.c: In function 'main':
-ztest58096.c:13:5: warning: old-style function definition [-Wold-style-definition]
+ztest82259.c: In function ‘main’:
+ztest82259.c:13:5: warning: old-style function definition [-Wold-style-definition]
  int main()
      ^
 Checking for return value of vsnprintf()... Yes.
 
-=== ztest58096.c ===
+=== ztest82259.c ===
 #define ZLIB_INTERNAL __attribute__((visibility ("hidden")))
 int ZLIB_INTERNAL foo;
 int main()
@@ -165,27 +165,27 @@ int main()
   return 0;
 }
 ===
-gcc-4.9 -c -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Work/repos/wgrib2/include -I/Users/Mike/Work/repos/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include ztest58096.c
-ztest58096.c: In function 'main':
-ztest58096.c:3:5: warning: old-style function definition [-Wold-style-definition]
+gcc -c -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Code/wgrib2/include -I/Users/Mike/Code/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include ztest82259.c
+ztest82259.c: In function ‘main’:
+ztest82259.c:3:5: warning: old-style function definition [-Wold-style-definition]
  int main()
      ^Checking for attribute(visibility) support... No.
 
 ALL = static shared
 AR = libtool
 ARFLAGS = -o
-CC = gcc-4.9
-CFLAGS = -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Work/repos/wgrib2/include -I/Users/Mike/Work/repos/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include
-CPP = gcc-4.9 -E
+CC = gcc
+CFLAGS = -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Code/wgrib2/include -I/Users/Mike/Code/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include
+CPP = gcc -E
 EXE =
 LDCONFIG = ldconfig
 LDFLAGS =
-LDSHARED = gcc-4.9 -dynamiclib -install_name ${exec_prefix}/lib/libz.1.dylib -compatibility_version 1 -current_version 1.2.8
+LDSHARED = gcc -dynamiclib -install_name ${exec_prefix}/lib/libz.1.dylib -compatibility_version 1 -current_version 1.2.8
 LDSHAREDLIBC = -lc
 OBJC = $(OBJZ) $(OBJG)
 PIC_OBJC = $(PIC_OBJZ) $(PIC_OBJG)
 RANLIB = ranlib
-SFLAGS = -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Work/repos/wgrib2/include -I/Users/Mike/Work/repos/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include -fPIC
+SFLAGS = -Wall -Wmissing-prototypes -Wold-style-definition -Werror=format-security -ffast-math -O3 -I/Users/Mike/Code/wgrib2/include -I/Users/Mike/Code/wgrib2/g2clib-1.4.0 -DGFORTRAN -fopenmp -I/usr/include -fPIC
 SHAREDLIB = libz.dylib
 SHAREDLIBM = libz.1.dylib
 SHAREDLIBV = libz.1.2.8.dylib
@@ -197,7 +197,7 @@ exec_prefix = ${prefix}
 includedir = ${prefix}/include
 libdir = ${exec_prefix}/lib
 mandir = ${prefix}/share/man
-prefix = /Users/Mike/Work/repos/wgrib2
+prefix = /Users/Mike/Code/wgrib2
 sharedlibdir = ${libdir}
 uname = Darwin
 --------------------

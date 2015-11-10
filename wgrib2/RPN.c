@@ -186,6 +186,17 @@ int f_rpn(ARG1) {
         }
     }
 
+    // KtoF
+
+    else if (strcmp(string,"KtoF") == 0) {
+        if (top < 0) fatal_error("-rpn: bad KtoF","");
+        for (i = 0; i < ndata; i++) {
+        if (DEFINED_VAL(stack[top][i])) {
+            stack[top][i] = (stack[top][i] - 273.15f) * 9.0f/5.0f + 32.0f;
+        }
+        }
+    }
+
     // binary operators + - * /
 
 	else if (strcmp(string,"+") == 0) {

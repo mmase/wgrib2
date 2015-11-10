@@ -32,4 +32,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/Users/Mike/Work/repos/wgrib2/lib'
+libdir='/Users/Mike/Code/wgrib2/lib'

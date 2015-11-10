@@ -1,5 +1,5 @@
 libvers.lo: libvers.c ../config.h netcdf.h \
- /usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include/stddef.h \
+ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include/stddef.h \
  /usr/include/errno.h /usr/include/sys/errno.h /usr/include/sys/cdefs.h \
  /usr/include/sys/_symbol_aliasing.h \
  /usr/include/sys/_posix_availability.h \
@@ -9,7 +9,7 @@ libvers.lo: libvers.c ../config.h netcdf.h \
 
 netcdf.h:
 
-/usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include/stddef.h:
+/usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include/stddef.h:
 
 /usr/include/errno.h:
 

@@ -12,7 +12,7 @@ tst_small.o: tst_small.c nc_tests.h ../config.h /usr/include/assert.h \
  /usr/include/string.h /usr/include/sys/_types/_rsize_t.h \
  /usr/include/sys/_types/_errno_t.h /usr/include/strings.h \
  /usr/include/secure/_string.h error.h ../libsrc/netcdf.h \
- /usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include/stddef.h \
+ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include/stddef.h \
  /usr/include/errno.h /usr/include/sys/errno.h
 
 nc_tests.h:
@@ -73,7 +73,7 @@ error.h:
 
 ../libsrc/netcdf.h:
 
-/usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include/stddef.h:
+/usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include/stddef.h:
 
 /usr/include/errno.h:
 

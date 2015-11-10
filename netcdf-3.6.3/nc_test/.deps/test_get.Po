@@ -20,8 +20,8 @@ test_get.o: test_get.c tests.h ../config.h /usr/include/stdio.h \
  /usr/include/sys/_types/_sigaltstack.h \
  /usr/include/sys/_types/_ucontext.h /usr/include/sys/_types/_sigset_t.h \
  /usr/include/sys/_types/_uid_t.h /usr/include/sys/resource.h \
- /usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include/stdint.h \
- /usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include-fixed/stdint.h \
+ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include/stdint.h \
+ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include-fixed/stdint.h \
  /usr/include/sys/_types/_int8_t.h /usr/include/sys/_types/_int16_t.h \
  /usr/include/sys/_types/_int32_t.h /usr/include/sys/_types/_int64_t.h \
  /usr/include/_types/_uint8_t.h /usr/include/_types/_uint16_t.h \
@@ -36,14 +36,14 @@ test_get.o: test_get.c tests.h ../config.h /usr/include/stdio.h \
  /usr/include/sys/_types/_wchar_t.h /usr/include/machine/types.h \
  /usr/include/i386/types.h /usr/include/sys/_types/_dev_t.h \
  /usr/include/sys/_types/_mode_t.h /usr/include/assert.h \
- /usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include-fixed/limits.h \
- /usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include-fixed/syslimits.h \
+ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include-fixed/limits.h \
+ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/machine/limits.h \
  /usr/include/i386/limits.h /usr/include/i386/_limits.h \
  /usr/include/sys/syslimits.h \
- /usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include/float.h \
+ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include/float.h \
  ../libsrc/netcdf.h \
- /usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include/stddef.h \
+ /usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include/stddef.h \
  /usr/include/errno.h /usr/include/sys/errno.h error.h
 
 tests.h:
@@ -132,9 +132,9 @@ tests.h:
 
 /usr/include/sys/resource.h:
 
-/usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include/stdint.h:
+/usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include/stdint.h:
 
-/usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include-fixed/stdint.h:
+/usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include-fixed/stdint.h:
 
 /usr/include/sys/_types/_int8_t.h:
 
@@ -190,9 +190,9 @@ tests.h:
 
 /usr/include/assert.h:
 
-/usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include-fixed/limits.h:
+/usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include-fixed/limits.h:
 
-/usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include-fixed/syslimits.h:
+/usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include-fixed/syslimits.h:
 
 /usr/include/limits.h:
 
@@ -204,11 +204,11 @@ tests.h:
 
 /usr/include/sys/syslimits.h:
 
-/usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include/float.h:
+/usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include/float.h:
 
 ../libsrc/netcdf.h:
 
-/usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2/include/stddef.h:
+/usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0/include/stddef.h:
 
 /usr/include/errno.h:
 

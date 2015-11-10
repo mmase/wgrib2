@@ -65,13 +65,13 @@ fast_install=needless
 
 # The host system.
 host_alias=
-host=i386-apple-darwin14.4.0
-host_os=darwin14.4.0
+host=i386-apple-darwin15.0.0
+host_os=darwin15.0.0
 
 # The build system.
 build_alias=
-build=i386-apple-darwin14.4.0
-build_os=darwin14.4.0
+build=i386-apple-darwin15.0.0
+build_os=darwin15.0.0
 
 # A sed program that does not truncate output.
 SED="/usr/bin/sed"
@@ -135,7 +135,7 @@ old_postinstall_cmds="chmod 644 \$oldlib~\$RANLIB \$oldlib"
 old_postuninstall_cmds=""
 
 # A C compiler.
-LTCC="gcc-4.9"
+LTCC="gcc"
 
 # LTCC compiler flags.
 LTCFLAGS="-g -O2"
@@ -231,7 +231,7 @@ finish_eval=""
 hardcode_into_libs=no
 
 # Compile-time system search path for libraries.
-sys_lib_search_path_spec="/usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9/gcc/x86_64-apple-darwin14.3.0/4.9.2 /usr/local/Cellar/gcc49/4.9.2_1/lib/gcc/4.9 /usr/lib /usr/local/lib"
+sys_lib_search_path_spec="/usr/local/lib/gcc/x86_64-apple-darwin15.0.0/5.2.0 /usr/local/lib /usr/lib /usr/local/lib"
 
 # Run-time system search path for libraries.
 sys_lib_dlsearch_path_spec="/usr/local/lib /lib /usr/lib"
@@ -257,7 +257,7 @@ LD="/usr/bin/ld"
 old_archive_cmds="\$AR \$AR_FLAGS \$oldlib\$oldobjs~\$RANLIB \$oldlib"
 
 # A language specific compiler.
-CC="gcc-4.9"
+CC="gcc"
 
 # Is the compiler the GNU compiler?
 with_gcc=yes
@@ -8439,7 +8439,7 @@ LD="/usr/bin/ld"
 old_archive_cmds="\$AR \$AR_FLAGS \$oldlib\$oldobjs~\$RANLIB \$oldlib"
 
 # A language specific compiler.
-CC="gfortran-4.8"
+CC="gfortran"
 
 # Is the compiler the GNU compiler?
 with_gcc=yes
@@ -8588,7 +8588,7 @@ LD="/usr/bin/ld"
 old_archive_cmds="\$AR \$AR_FLAGS \$oldlib\$oldobjs~\$RANLIB \$oldlib"
 
 # A language specific compiler.
-CC="gfortran-4.8"
+CC="gfortran"
 
 # Is the compiler the GNU compiler?
 with_gcc=yes
